@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansoori fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Cabin:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/cg.jpg') no-repeat center center/cover;
+        /* background-repeat: no-repeat;
+        background-size: 100%; */
+        color: white;
+        font-family: 'Cabin', sans-serif;
+
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+    }
+
+    .mid {
+        /* border: 2px solid yellow; */
+        width: 38%;
+        display: block;
+        margin: 29px 300px;
+
+    }
+
+    .right {
+        /* border: 2px solid green; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 44px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+        /* box-sizing: border-box; */
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 19px;
+        font-size: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline red;
+
+        /* color: blue; */
+
+    }
+
+    .left img {
+        width: 90px;
+        /* image logo ko white karne ke liye filter invert ka use karte hai */
+        filter: invert(100%);
+        padding: 0px 31px;
+    }
+
+    .left div {
+        text-align: center;
+        color: red;
+        line-height: 20px;
+        font-size: 21px;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 12px;
+        cursor: pointer;
+        background-color: black;
+        color: #fff;
+        font-size: 12px;
+        font-family: 'Cabin', sans-serif;
+
+
+    }
+
+    .btn:hover {
+        background-color: green;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 130px 21px;
+        padding: 70px;
+        border-radius: 20px;
+        width: 30%;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        margin: 11px auto;
+        padding: 1px;
+        width: 460px;
+        border: 2px solid black;
+        font-size: 21px;
+        font-family: 'Cabin', sans-serif;
+        border-radius: 12px;
+    }
+
+    .container button {
+        display: block;
+        font-family: 'Cabin', sans-serif;
+        width: 100%;
+        margin: 10px auto;
+        font-size: 20px;
+
+    }
+
+    .container button:hover {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Baheri Fitness point</div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness</a></li>
+                <li><a href="">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+        <!-- right Box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us Now</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best of Gym Baheri now</h1>
+        <form action="nophp action">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Subbmit Now</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
